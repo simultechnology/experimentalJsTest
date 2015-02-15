@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/mocha.css" />
+    <title>FizzBuzzのテスト</title>
+    <script type="text/javascript" src="js/chai.js"></script>
+    <script type="text/javascript" src="js/mocha.js"></script>
+    <script type="text/javascript">
+      <!--
+      mocha.setup('bdd');
+      mocha.setup('tdd');
+      // chaiの各アサーションモジュールを読み込む
+      // assertの機能を読み込み
+      var assert = chai.assert;
+      // expectの機能を読み込み
+      var expect = chai.expect;
+      // shouldの機能を読み込み
+      chai.Should();
+
+      // テスト対象のメソッド。
+      var fizzbuzz = function(n) {
+        if (n % 3 === 0 && n % 5 === 0)
+          return "Fizz,Buzz";
+        else if (n % 3 === 0)
+          return "Fizz";
+        else if (n % 5 === 0)
+          return "Buzz";
+        else
+          return n;
+      }
+      var existsCustomerData = function(name){
+          // 顧客データが存在することを確認する処理（仮）
+          return true;
+      }
+      suite('fizzbuzzメソッドのテスト', function(){
+        suite('#fizzbuzz()', function(){
+          test("3の場合はFizzが返ってくる", function () {
+            assert.equal("Fizz", fizzbuzz(3), '引数が3の場合はFizzが返ってくる');
+          });
+        });
+      });
+      // BDDでテストを記述
+      describe('顧客データを保存する場合', function() {
+        it("重複したデータが存在しないこと", function () {
+          existsCustomerData("yasunishi").should.to.eql(false);
+        });
+      });
+      -->
+    </script>
+  </head>
+  <body>
+    <div id="mocha"></div>
+  </body>
+  <script type="text/javascript">
+  <!--
+  mocha.run();
+  -->
+  </script>
+</html>
